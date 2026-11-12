@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Papeterie du campus — Maquette HTML/CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .static-preview button:disabled {
+        opacity: 1;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body class="static-preview">
+    
+    <main class="shop-layout">
+      <section class="catalog" aria-labelledby="catalog-title">
+        
+        <p class="result-count">4 produits</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-illustration" aria-hidden="true">
+              <div class="product-cover">NOTES<small>180 pages</small></div>
+            </div>
+            <p class="product-category">Cahiers</p>
+            <h3 class="product-name">Cahier grand format</h3>
+            <div class="product-bottom">
+              <span class="product-price">1 200 FCFA</span
+              ><button class="add-button" type="button" disabled>
+                + Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-illustration" aria-hidden="true">
+              <div class="product-cover">STYLOS<small>4 couleurs</small></div>
+            </div>
+            <p class="product-category">Écriture</p>
+            <h3 class="product-name">Lot de 4 stylos</h3>
+            <div class="product-bottom">
+              <span class="product-price">600 FCFA</span
+              ><button class="add-button" type="button" disabled>
+                + Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-illustration" aria-hidden="true">
+              <div class="product-cover">IDÉES<small>Format A6</small></div>
+            </div>
+            <p class="product-category">Cahiers</p>
+            <h3 class="product-name">Carnet de poche</h3>
+            <div class="product-bottom">
+              <span class="product-price">800 FCFA</span
+              ><button class="add-button" type="button" disabled>
+                + Ajouter
+              </button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-illustration" aria-hidden="true">
+              <div class="product-cover">FLUO<small>3 couleurs</small></div>
+            </div>
+            <p class="product-category">Écriture</p>
+            <h3 class="product-name">Lot de 3 surligneurs</h3>
+            <div class="product-bottom">
+              <span class="product-price">900 FCFA</span
+              ><button class="add-button" type="button" disabled>
+                + Ajouter
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <aside class="cart" aria-labelledby="cart-title">
+        <div class="cart-heading">
+          <h2 id="cart-title">Mon panier</h2>
+          <span class="cart-count">2 articles</span>
+        </div>
+        <ul class="cart-list">
+          <li class="cart-item">
+            <div class="cart-item-top">
+              <p class="cart-item-name">Cahier grand format</p>
+              <button
+                class="remove-button"
+                type="button"
+                aria-label="Retirer Cahier grand format"
+                disabled
+              >
+                ×
+              </button>
+            </div>
+            <div class="cart-item-bottom">
+              <div class="quantity-control">
+                <button
+                  class="quantity-button"
+                  type="button"
+                  aria-label="Diminuer Cahier grand format"
+                  disabled
+                >
+                  −</button
+                ><span class="quantity-value">1</span
+                ><button
+                  class="quantity-button"
+                  type="button"
+                  aria-label="Augmenter Cahier grand format"
+                  disabled
+                >
+                  +
+                </button>
+              </div>
+              <span class="line-total">1 200 FCFA</span>
+            </div>
+          </li>
+          <li class="cart-item">
+            <div class="cart-item-top">
+              <p class="cart-item-name">Lot de 4 stylos</p>
+              <button
+                class="remove-button"
+                type="button"
+                aria-label="Retirer Lot de 4 stylos"
+                disabled
+              >
+                ×
+              </button>
+            </div>
+            <div class="cart-item-bottom">
+              <div class="quantity-control">
+                <button
+                  class="quantity-button"
+                  type="button"
+                  aria-label="Diminuer Lot de 4 stylos"
+                  disabled
+                >
+                  −</button
+                ><span class="quantity-value">1</span
+                ><button
+                  class="quantity-button"
+                  type="button"
+                  aria-label="Augmenter Lot de 4 stylos"
+                  disabled
+                >
+                  +
+                </button>
+              </div>
+              <span class="line-total">600 FCFA</span>
+            </div>
+          </li>
+        </ul>
+        <p class="cart-total"><span>Total</span><span>1 800 FCFA</span></p>
+        <p class="cart-note">Prix fictifs pour l’exercice.</p>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      Maquette HTML/CSS · Les boutons sont désactivés : ils seront activés en
+      JavaScript.
+    </footer>
+  </body>
+
+
+  <script src="script.js"></script>
+</html>
